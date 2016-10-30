@@ -1,0 +1,243 @@
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.box0 {
+	width: 200px;
+	height: 200px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-left: -100px;
+	margin-top: -100px;
+	overflow: hidden;
+}
+
+.box0 span {
+	display: block;
+	color: #fff;
+	font-size: 25px;
+	float: left;
+	opacity: 0;
+	transition: 1s all ease;
+	text-shadow: 0 0 50px #039;
+}
+
+.box {
+	position: relative
+}
+
+.box1 {
+	background: url(../img1/1.jpg)no-repeat center;
+	background-size: 100%;
+}
+
+.box2 {
+	width: 100%;
+	height: 100%;
+	background: deepskyblue;
+	opacity: 0.9;
+	position: absolute;
+	left: 0;
+	top: 0;
+	transform-style: preserve-3d;
+	overflow: hidden;
+	transition: 0.6s all ease;
+}
+
+.box2 .box21 {
+	width: 50%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	background: url(../img1/69h58PICKsG_1024.jpg)no-repeat;
+	background-size: cover;
+	transition: 6s all ease-in;
+	transform-origin: left;
+}
+
+.box2 .box22 {
+	width: 50%;
+	height: 100%;
+	position: absolute;
+	right: -50%;
+	top: 0;
+	background: url(../img1/69h58PICKsG_1024.jpg)no-repeat right;
+	background-size: cover;
+	transform: rotateY(-180deg);
+	transition: 6s all ease-in;
+	transform-origin: left;
+}
+
+.box2 .box23 img {
+	width: 150px;
+	height: 150px;
+}
+
+.box2 .box23 {
+	position: absolute;
+	left: 50%;
+	margin-left: -75px;
+	opacity: 0.5;
+	animation: name 3s ease-in-out infinite alternate;
+	transition: 0.5s all ease-in;
+}
+
+@-webkit-keyframes name {
+	from {
+		top: 0
+	}
+	to {
+		top: 70%;
+	}
+}
+
+.box11 {
+	width: 100%;
+	height: 1rem;
+	box-sizing: border-box;
+}
+
+.box11 {
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 8rem;
+	overflow: hidden;
+	text-align: center;
+}
+
+.box11 li {
+	float: left;
+	width: 2rem;
+	height: 100%;
+	font-size: 0.4rem;
+	color: #ccc32c;
+	text-shadow: 3px -2px 4px #CCC32C, 5px -4px 8px #CCC32C;
+	cursor:pointer;
+}
+
+.box12 {
+	width: 100%;
+	height: 0.5rem;
+	background: -webkit-linear-gradient(-45deg, blue, green, #000);
+}
+
+.box13 {
+	width: 80%;
+	height: 80%;
+	margin: 0 auto;
+	opacity: 0.7;
+	display:none;
+}
+
+.box13 ul {
+	overflow: hidden;
+	margin: 0.5rem auto;
+	height: 100%;
+}
+
+.box13 li {
+	float: left;
+	width: 18%;
+	height: 3.3rem;
+	margin-left: 0.25rem;
+	-webkit-box-reflect: below 0.1rem linear-gradient(rgba(0, 0, 0, 0)70%, rgba(0, 0, 0, 1));
+	transition: 1s all ease;
+}
+
+.box13 li img {
+	width: 100%;
+	height: 100%;
+	border-radius: 10%;
+}
+
+.box13 li:nth-child(odd) {
+	margin-top: 1.5rem;
+	animation: lia 1.3s ease-in-out infinite alternate;
+}
+
+.box13 li:nth-child(even) {
+	animation: lib 1.3s linear infinite alternate;
+}
+
+@keyframes lia {
+	from {
+		margin-top: 0;
+	}
+	to {
+		margin-top: 1.5rem;
+	}
+}
+.rot{transform:perspective(800px) rotateY(180deg);}
+@keyframes lib {
+	from {
+		margin-top: 1.5rem;
+	}
+	to {
+		margin-top: 0;
+	}
+}
+
+.box14 {
+	margin-top: 1.5rem;
+	opacity: 0.7;
+	display: none;
+}
+
+.box14-1 {
+	width: 3.75rem;
+	height: 3.75rem;
+	margin: 0 auto;
+	transform-style: preserve-3d;
+	transform: perspective(800px) rotateY(-60deg) rotateX(30deg);
+	position: relative;
+	transition: 4s all ease;
+}
+
+.box14-1 span {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
+
+.front {
+	transform: translateZ(1.875rem);
+}
+
+.back {
+	transform: translateZ(-1.875rem);
+}
+
+.left {
+	transform: translateX(-1.875rem) rotateY(90deg);
+}
+
+.right {
+	transform: translateX(1.875rem) rotateY(90deg);
+}
+
+.top {
+	transform: translateY(-1.875rem) rotateX(90deg);
+}
+
+.bottom {
+	transform: translateY(1.875rem) rotateX(90deg);
+}
+
+.box14-1:hover {
+	transform: perspective(800px) rotateY(-360deg) rotateX(360deg);
+}
+
+.box14-1 img {
+	width: 100%;
+	height: 100%;
+}
+.box16{width: 5rem;height: 5rem;position:absolute;left:50%;top:50%;margin-top:-2.5rem;margin-left:-2.5rem;opacity: 0.32;text-align: center;display: none;}
+.box16 h3{font-size:0.5rem;text-shadow: 3px -2px 4px #0000FF, 5px -4px 8px #CCC32C;color:#00FFFF}
+.box16 p{font-size:0.4rem;margin-top:0.2rem;text-shadow: 3px -2px 2px #0000FF, 5px -4px 8px #CCC32C;color:#CCC32C;}
+.box15{position:absolute;left:50%;top:50%;opacity:0.5;margin-top:-3.25rem;margin-left:-8rem;display: none;}
+.box15-1{width:16rem;height:6.5rem;}
