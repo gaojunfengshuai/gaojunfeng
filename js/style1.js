@@ -58,10 +58,10 @@ window.onload  = function() {
 	for(var i = 0; i < aLi.length; i++) {
 		aLi[i].bOk=true;
 		aLi[i].onmouseover = function() {
-			this.style.WebkitBoxReflect = 'below 0rem linear-gradient(rgba(0,0,0,0)70%,rgba(0,0,0,1))';
+			this.style.WebkitBoxReflect = 'below 0px linear-gradient(rgba(0,0,0,0)70%,rgba(0,0,0,1))';
 		}
 		aLi[i].onmouseout = function() {
-			this.style.WebkitBoxReflect = 'below 0.1rem linear-gradient(rgba(0,0,0,0)70%,rgba(0,0,0,1))';
+			this.style.WebkitBoxReflect = 'below 10px linear-gradient(rgba(0,0,0,0)70%,rgba(0,0,0,1))';
 		}
 		aLi[i].onclick = function() {
 			if(!this.bOk){return};
@@ -81,8 +81,8 @@ window.onload  = function() {
 		oBtn[i].onclick = function() {
 			for(var j = 0; j < oBtn.length; j++) {
 				oQh[j].style.display = "none";
-				oBtn[j].style.color="#ccc32c";
-				oBtn[j].style.textShadow='3px -2px 4px #CCC32C, 5px -4px 8px #CCC32C';
+				oBtn[j].style.color="#fff";
+				oBtn[j].style.textShadow='3px -2px 4px #fff, 5px -4px 8px #fff';
 			}
 			oQh[this.index].style.display = "block";
 			this.style.color='skyblue';
